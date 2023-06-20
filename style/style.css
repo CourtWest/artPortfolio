@@ -1,0 +1,92 @@
+/* Checkout css mask, add different httml set up for art, blog, about contact
+    art has the art, text and left and right buttons
+    blog has left and right buttons
+*/
+
+body {
+  margin: 0px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3.5fr 0.5fr;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  overflow: auto;
+  row-gap: 0px;
+  column-gap: 0px;
+}
+
+#top-portion {
+  background-color: black;
+  overflow: hidden;
+  grid-area: header;
+}
+
+#bottom-portion {
+  background-color: black;
+  grid-area: footer;
+}
+#middle-portion {
+  background-color: antiquewhite;
+  grid-area: main;
+}
+#header {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 3vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(238, 144, 13, 0.3) 20%, rgba(238, 144, 13, 0.3) 80%, rgba(0, 0, 0, 0.25) 100%);
+}
+#header-container {
+  margin: auto;
+  width: 70%;
+  position: relative;
+  top: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-link {
+  color: white;
+  font-size: 1.5em;
+}
+#banner {
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  text-align: center;
+  top: -30px;
+}
+
+#banner-logo {
+  position: relative;
+  top: 45px;
+}
+
+#carosaul-header {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#carosaul {
+  /* background-color: bisque; */
+  position: relative;
+  height: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#footer {
+  color: white;
+  font-size: 1em;
+  text-align: right;
+  padding-right: 5px;
+}
